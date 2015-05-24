@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.cursonjiang.weather.App;
 import com.cursonjiang.weather.R;
+import com.cursonjiang.weather.service.AutoUpdateService;
 import com.cursonjiang.weather.util.HttpCallbackListener;
 import com.cursonjiang.weather.util.HttpUtil;
 import com.cursonjiang.weather.util.Utility;
@@ -175,6 +176,7 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
         publishText.setText("今天" + sp.getString("publish_time", "") + "发布");
         weatherInfoLayout.setVisibility(View.VISIBLE);
         cityNameText.setVisibility(View.VISIBLE);
+        startService(new Intent(this, AutoUpdateService.class));
     }
 
     @Override
