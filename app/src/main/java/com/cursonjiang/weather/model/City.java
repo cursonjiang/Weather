@@ -38,11 +38,11 @@ public class City {
         this.id = id;
     }
 
-    public int getprovinceId() {
+    public int getProvinceId() {
         return provinceId;
     }
 
-    public void setprovinceId(int provinceIn) {
+    public void setProvinceId(int provinceIn) {
         this.provinceId = provinceIn;
     }
 }

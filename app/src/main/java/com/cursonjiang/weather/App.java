@@ -16,7 +16,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         mContext = getApplicationContext();
-        Logger.init().hideThreadInfo();
+        Logger.init("weather").hideThreadInfo();
 
     }
 
